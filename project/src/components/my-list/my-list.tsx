@@ -1,6 +1,6 @@
 import PageFooter from '../page-footer/page-footer';
-import SmallFilmCard from '../small-film-card/small-film-card';
 import PageHeader from '../page-header/page-header';
+import SmallFilmCard from '../small-film-card/small-film-card';
 
 function MyList(): JSX.Element {
   return (

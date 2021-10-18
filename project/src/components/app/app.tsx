@@ -1,13 +1,13 @@
-import MainScreen from '../main/main';
-import ErrorPage from '../error-page/error-page';
-import SignIn from '../sign-in/sign-in';
-import MyList from '../my-list/my-list';
-import MoviePage from '../movie-page/movie-page';
-import Review from '../add-review/add-review';
-import Player from '../player/player';
 import {AppRoute, AuthorizationStatus} from '../../const';
+import {BrowserRouter, Route, Switch } from 'react-router-dom';
+import ErrorPage from '../error-page/error-page';
+import MoviePage from '../movie-page/movie-page';
+import MyList from '../my-list/my-list';
+import MainScreen from '../main/main';
+import Player from '../player/player';
 import PrivateRoute from '../private-route/private-route';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Review from '../add-review/add-review';
+import SignIn from '../sign-in/sign-in';
 
 
 type AppScreenProps = {

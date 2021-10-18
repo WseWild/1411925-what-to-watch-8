@@ -1,5 +1,6 @@
-import PageFooter from '../page-footer/page-footer';
 import PageHeader from '../page-header/page-header';
+import PageFooter from '../page-footer/page-footer';
+
 
 function ErrorPage (): JSX.Element {
   return (

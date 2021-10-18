@@ -1,7 +1,6 @@
+import App from './components/app/app';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app/app';
-
 
 const Settings = {
   FILM_CARD_TITLE: 'The Grand Budapest Hotel',

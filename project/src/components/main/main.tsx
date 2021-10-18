@@ -1,6 +1,6 @@
-import SmallFilmCard from '../small-film-card/small-film-card';
 import PageFooter from '../page-footer/page-footer';
 import PageHeader from '../page-header/page-header';
+import SmallFilmCard from '../small-film-card/small-film-card';
 
 type MainScreenProps = {
   filmCardTitle: string;
