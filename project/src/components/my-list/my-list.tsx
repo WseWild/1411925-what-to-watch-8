@@ -44,13 +44,13 @@ function MyList(): JSX.Element {
         <h2 className="catalog__title visually-hidden">Catalog</h2>
 
         <div className="catalog__films-list">
-          {SmallFilmCard()}
-          {SmallFilmCard()}
-          {SmallFilmCard()}
-          {SmallFilmCard()}
-          {SmallFilmCard()}
-          {SmallFilmCard()}
-          {SmallFilmCard()}
+          {SmallFilmCard}
+          {SmallFilmCard}
+          {SmallFilmCard}
+          {SmallFilmCard}
+          {SmallFilmCard}
+          {SmallFilmCard}
+          {SmallFilmCard}
         </div>
       </section>
 

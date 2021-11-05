@@ -2,7 +2,17 @@ import PageFooter from '../page-footer/page-footer';
 import PageHeader from '../page-header/page-header';
 import SmallFilmCard from '../small-film-card/small-film-card';
 
-function MoviePage(): JSX.Element {
+import {FilmsInfo} from '../../types/film';
+
+
+type MoviePageProps = {
+  filmsInfo: FilmsInfo;
+}
+
+
+function MoviePage(props:MoviePageProps): JSX.Element {
+  const {filmsInfo} = props;
+
   return (
     <>
       <div className="visually-hidden">
@@ -48,7 +58,7 @@ function MoviePage(): JSX.Element {
 
           <div className="film-card__wrap">
             <div className="film-card__desc">
-              <h2 className="film-card__title">The Grand Budapest Hotel</h2>
+              <h2 className="film-card__title">Fantomas</h2>
               <p className="film-card__meta">
                 <span className="film-card__genre">Drama</span>
                 <span className="film-card__year">2014</span>
@@ -122,10 +132,8 @@ function MoviePage(): JSX.Element {
           <h2 className="catalog__title">More like this</h2>
 
           <div className="catalog__films-list">
-            {SmallFilmCard}
-            {SmallFilmCard}
-            {SmallFilmCard}
-            {SmallFilmCard}
+            {filmsInfo.map((film) =>  SmallFilmCard(film))}
+
           </div>
         </section>
 
